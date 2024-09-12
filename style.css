@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #3498db;
+  --second-color: #2c3e50;
+  --text-color: #333;
+  --bg-color: #fafafa;
+  --meta-color: #777;
+  --heading-font: Arial, sans-serif;
+  --body-font: Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+ }
+
+ body{
+  font-family: "Noto Naskh Arabic", serif;
+ }
+
+ .cabecalho{
+    display:flex;
+    justify-content:space-between;
+    background-color:#ffffff;
+    padding:20px 40px;
+    align-items:center;
+ }
+
+ #logo img {
+    max-width: 150px;
+ }
+
+ .menu-principal{
+    display:flex;
+    gap: 60px;
+    list-style:none;
+    font-size:20px;
+    font-weight:300;
+
+ }
+
+ .hero {
+   background-image: url(/imagens/kakau.jpg);
+   background-size:cover;
+   background-position:center;
+   height: 80vh;
+   width:100%;
+   display:flex;
+ }
+
+ .transparent-cover{
+ background-color: rgba(0,0,0,0.3);
+ height: 80vh;
+ width:100%;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ flex-direction:column;
+ gap:30px;
+ color:#ffffff;
+
+ }
+ .transparent-cover h1{
+   font-size:3rem;
+   color:#ffffff;
+
+ }
+ .transparent-cover h3{
+   font-size:1.5rem;
+   font-weight:400;
+ }
+
+ .btn{
+   background-color:rgb(61, 36, 3);;
+   color:#fdfdfd;
+   text-decoration:none;
+   padding:1rem 1.5rem;
+   border-radius:0.5rem;
+   font-weight:600;
+   transition:background-color 0.8s ease;
+ }
+
+ .btn:hover{
+   background-color:rgb(39, 22, 2);
+
+ }
+ .packages{
+   padding: 4rem 2rem;
+ }
+
+ .packages h2{
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 50PX;
+ }
+
+ .package-container{
+   display:flex;
+   flex-wrap:wrap;
+   gap:2rem;
+   justify-content:center;
+
+
+ }
+
+ .package-card{
+   background-color:#fdfdfd;
+   border-radius:0.5rem;
+   box-shadow:0 2px 4px rgba(0,0,0,0.5);
+   flex-basis:27%;
+   transition:transform 0.3s ease;
+ }
+
+ .package-card:hover{
+   transform:translateY(-8px);
+ }
+
+ .package-card img{
+   width:100%;
+   height:400px;
+ }
+
+ .package-card .category{
+   display:block;
+   position:absolute;
+   background-color: #fdfdfd;
+   color:aliceblue;
+   padding:0.3rem 0.8rem;
+   border-radius:0.8rem;
+   margin:-3rem 0 2rem 1rem;
+ }
+
+ .package-card h3{
+   font-size:1.3rem;
+   color:rgb(61, 36, 3);
+   margin:0.8rem 0;
+ }
+
+ .package-card p {
+   font-size:1.3rem;
+   color:rgba(37, 1, 1, 0.87);
+   margin:0.8rem 0;
+ }
+
+ .package-card .price{
+   font-size:1.3rem;
+   font-weight: 700;
+   margin:0.8rem 0;
+   color: brown;
+ }
+ 
